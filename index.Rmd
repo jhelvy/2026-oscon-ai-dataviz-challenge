@@ -1,0 +1,300 @@
+---
+title: 'JP vs. AI: A Modern "John Henry Style" Dataviz Challenge'
+author: "John Paul Helveston"
+date: Mar 24, 2026
+institute: "The George Washington University | Dept. of Engineering Management and Systems Engineering"
+output:
+  xaringan::moon_reader:
+    css:
+      - default
+      - css/lexis.css
+      - css/lexis-fonts.css
+    lib_dir: libs
+    nature: 
+      beforeInit: "https://platform.twitter.com/widgets.js"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    seal: false
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(fontawesome)
+library(tidyverse)
+library(metathis)
+library(logitr)
+
+options(
+  htmltools.dir.version = FALSE,
+  knitr.table.format = "html",
+  knitr.kable.NA = '',
+  dplyr.width = Inf,
+  width = 250
+)
+
+knitr::opts_chunk$set(
+  cache = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.path = "figs/",
+  fig.width = 7.252,
+  fig.height = 4,
+  comment = "#>",
+  fig.retina = 3
+)
+
+# Setup xaringanExtra options
+xaringanExtra::use_xaringan_extra(c(
+  "tile_view", "panelset", "share_again"))
+xaringanExtra::style_share_again(share_buttons = "none")
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,
+  mute_unhighlighted_code = FALSE
+)
+xaringanExtra::use_broadcast()
+xaringanExtra::use_freezeframe(responsive = FALSE)
+
+knitr::opts_chunk$set(
+    warning = FALSE,
+    message = FALSE,
+    comment = "#>",
+    fig.path = "figs/",
+    fig.retina = 3 # Better figure resolution
+)
+```
+
+layout: true
+
+<!-- this adds the link footer to all slides, depends on my-footer class in css-->
+
+<div class="footer-small">
+<span>
+https://github.com/jhelvy/2026-oscon-ai-dataviz-challenge
+</span>
+</div>
+
+---
+
+name: title-slide
+class: inverse, middle
+
+# JP vs. AI 
+
+## A Modern "John Henry Style" Dataviz Challenge
+
+.leftcol60[
+
+### by John Paul Helveston
+
+### 2026 OSCON @ GWU
+
+]
+
+.rightcol40[
+
+<br><center>
+<img src="images/oscon.png" width=100%>
+</center>
+
+]
+
+---
+
+# .center[Who would win?]
+
+.leftcol[
+
+## .center[John Henry]
+
+<center>
+<img src="images/john-henry.png" width=75%>
+</center>
+
+.font80[https://en.wikipedia.org/wiki/John_Henry_(folklore)]
+
+]
+
+.rightcol[
+
+## .center[Steam Drill]
+
+<center>
+<img src="images/steam-drill.png" width=73%>
+</center>
+
+.font80[https://www.reddit.com/r/HistoryMemes/comments/m5rtt4/the_legend_of_john_henry/]
+
+]
+
+---
+
+# .center[Who would win?]
+
+.leftcol[
+
+## .center[John Helveston]
+
+<center>
+<img src="images/john-helveston.png" width=75%>
+</center>
+
+]
+
+.rightcol[
+
+## .center[AI]
+
+<center>
+<img src="images/claude.png" width=75%>
+</center>
+
+]
+
+---
+
+class:center
+
+# GW LAI Data Visualization Competition
+
+<br>
+<center>
+<img src="images/loop.png" width=100%>
+</center>
+
+https://libguides.gwu.edu/love-data-week/data-viz-2026
+
+---
+
+.cols3[
+
+# .center[Pingfan Hu]
+
+### .center[Ph.D. Student]
+
+<center>
+<img src="images/pingfan-hu.png" width=100%>
+</center>
+
+]
+
+.cols3[
+
+# .center[Nithin Sarva]
+
+### .center[M.S. Student]
+
+<center>
+<img src="images/nithin-sarva.png" width=100%>
+</center>
+
+]
+
+.cols3[
+
+# .center[Eric Lehman]
+
+### .center[B.S. Student]
+
+<center>
+<img src="images/eric-lehman.png" width=100%>
+</center>
+
+]
+
+Recording of challenge: https://youtu.be/q1oDviJDbPI?si=dLJ9H3OhFkTW0P5P
+
+---
+
+class:center
+
+# Eric (Undergraduate student)
+
+<center>
+<img src="images/chart-eric.png" width=60%>
+</center>
+
+---
+
+class: center
+
+## Nithin (Masters student)
+
+<center>
+<img src="images/chart-nithin.png" width=70%>
+</center>
+
+https://github.com/sarvanithin/Data-viz/
+
+---
+
+class: center
+
+## Pingfan (Ph.D. student)
+
+<center>
+<img src="images/chart-pingfan.png" width=60%>
+</center>
+
+https://github.com/pingfan-hu/2026-gw-data-viz-competition
+
+---
+
+> MANUS PROMPT: "this is a dataset for a dataviz competition, please expore it and come up with a compelling data visualization or set of charts"
+
+<center>
+<img src="images/manus.png" width=70%>
+</center>
+
+---
+
+class:center
+
+## JP (Faculty, w/out AI)
+
+<center>
+<img src="images/chart-john.png" width=89%>
+</center>
+
+https://github.com/jhelvy/gw-dataviz-2026
+
+---
+
+class: center, middle, inverse
+
+# Epilogue
+
+---
+
+class: center
+
+## JP (w/AI - React app + D3 graphics)
+
+<center>
+<img src="images/waffle.gif" width=90%>
+</center>
+
+https://github.com/jhelvy/gw-dataviz-2026
+
+---
+
+class: inverse
+
+.leftcol70[
+
+
+]
+
+.rightcol30[.right[
+
+# .center[.font150[Thanks!]]
+
+# .center[❤️ 😄 🙌]
+<br><br><br>
+@jhelvy.bsky.social `r fa(name = "bluesky", fill = "white")`<br>
+@jhelvy `r fa(name = "github", fill = "white")`<br>
+jhelvy.com `r fa(name = "link", fill = "white")`<br>
+jph@gwu.edu `r fa(name = "paper-plane", fill = "white")`<br>
+https://jhelvy.com/slides
+]]
