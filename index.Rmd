@@ -281,17 +281,19 @@ https://github.com/jhelvy/gw-dataviz-2026
 
 class: inverse
 
+<br>
+
 .leftcol70[
 
+# .center[.font150[Thanks!]]
+
+Slides:<br>https://github.com/jhelvy/2026-oscon-ai-dataviz-challenge/
 
 ]
 
 .rightcol30[.right[
 
-# .center[.font150[Thanks!]]
-
-# .center[❤️ 😄 🙌]
-<br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
 @jhelvy.bsky.social `r fa(name = "bluesky", fill = "white")`<br>
 @jhelvy `r fa(name = "github", fill = "white")`<br>
 jhelvy.com `r fa(name = "link", fill = "white")`<br>
